@@ -1,4 +1,4 @@
-package com.mnaik.m.ui.theme
+package com.mnaik.m.presentation.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

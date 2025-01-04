@@ -1,6 +1,5 @@
-package com.mnaik.m.ui.theme
+package com.mnaik.m.presentation.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -12,15 +11,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = md_theme_dark_primary,
+    onPrimary = md_theme_dark_onPrimary,
+    primaryContainer = md_theme_dark_primaryContainer
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = md_theme_light_primary,
+    onPrimary = md_theme_light_onPrimary,
+    primaryContainer = md_theme_light_primaryContainer
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),

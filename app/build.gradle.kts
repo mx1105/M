@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.hilt.kotlin.android)
+    id("kotlin-kapt")
 }
 
 android {
@@ -49,6 +51,18 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    // dagger-hilt
+    implementation(libs.hilt)
+    kapt(libs.hilt.android.compiler)
+
+//    ViewModel
+    implementation(libs.lifecycle.viewmodel)
+
+    //    Navigation
+    implementation(libs.androidx.navigation)
+    implementation(libs.androidx.navigation.compose)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
